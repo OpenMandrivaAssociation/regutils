@@ -1,6 +1,6 @@
 %define name	regutils
 %define version 0.10
-%define release 9
+%define release 10
 
 Summary:	Manipulate the Win9x registry
 Name:		%{name}
