@@ -16,7 +16,6 @@ Requires:	findutils
 BuildRequires: ed perl
 Provides:	regedit
 Conflicts:	wine-utils
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 %define _requires_exceptions perl\(regfilterLib\.pl\)
 
