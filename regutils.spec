@@ -1,19 +1,16 @@
-%define name	regutils
-%define version 0.10
-%define release 10
-
 Summary:	Manipulate the Win9x registry
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel %{release}
+Name:		regutils
+Version:	0.10
+Release:	%mkrel 11
 License:	GPL
 Group:		Networking/Other
+URL:		http://www.cs.mun.ca/~michael/regutils/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		regutils-0.10-Makefile.patch
-URL:		http://www.cs.mun.ca/~michael/regutils/
 Requires:	findutils
 #Requires:	samba-common samba
-BuildRequires: ed perl
+BuildRequires:	ed
+BuildRequires:	perl
 Provides:	regedit
 Conflicts:	wine-utils
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
@@ -37,7 +34,7 @@ fly as users log in, or as machines are booted.
 perl -pi -e 's#/local/bin/perl#%{_bindir}/perl#' apply-app-changes.*
 
 %install
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 install -d %{buildroot}%{_bindir}
 install -d %{buildroot}%{_libdir}
@@ -56,12 +53,10 @@ install -m 644 regfilterLib.pl %{buildroot}%{_libdir}/
 install -m 644 IniFile.pm %{buildroot}%{_libdir}/
 
 %clean
-[ "%{buildroot}" != "/" ] && rm -rf %{buildroot}
+rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
 %doc INSTALL NEWS PROJECTS README
 %{_bindir}/*
 %{_libdir}/*
-
-
