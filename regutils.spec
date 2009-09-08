@@ -1,7 +1,7 @@
 Summary:	Manipulate the Win9x registry
 Name:		regutils
 Version:	0.10
-Release:	%mkrel 11
+Release:	%mkrel 12
 License:	GPL
 Group:		Networking/Other
 URL:		http://www.cs.mun.ca/~michael/regutils/
