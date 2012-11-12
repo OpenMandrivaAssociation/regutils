@@ -1,0 +1,26 @@
+--- Makefile	Tue Dec  8 16:44:48 1998
++++ Makefile.oden	Wed Oct 24 05:34:11 2001
+@@ -3,11 +3,11 @@
+ #
+ 
+ # Where compiled programs go
+-BINDIR=/usr/local/bin
++BINDIR=/usr/bin
+ # Where perl programs go
+-SCRIPTBINDIR=/usr/local/bin
++SCRIPTBINDIR=/usr/bin
+ # Where perl library goes
+-LIBDIR=/usr/local/lib
++LIBDIR=/usr/lib
+ 
+ # Where perl lives
+ PERL=/usr/bin/perl
+@@ -23,7 +23,7 @@
+ # Your compiler
+ CC=		cc
+ DEBUG_FLAGS=	-g -Wall
+-CFLAGS=		-O $(DEBUG_FLAGS) -DVERSION=\"$(VERSION)\"
++CFLAGS=		-O $(RPM_OPT_FLAGS) $(DEBUG_FLAGS) -DVERSION=\"$(VERSION)\"
+ 
+ #
+ # end of config (you shouldn't need to modify stuff after this line)
