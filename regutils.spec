@@ -60,3 +60,41 @@ rm -rf %{buildroot}
 %doc INSTALL NEWS PROJECTS README
 %{_bindir}/*
 %{_libdir}/*
+
+
+%changelog
+* Tue Sep 08 2009 Thierry Vignaud <tvignaud@mandriva.com> 0.10-12mdv2010.0
++ Revision: 433092
+- rebuild
+
+* Sun Jul 20 2008 Oden Eriksson <oeriksson@mandriva.com> 0.10-11mdv2009.0
++ Revision: 239034
+- rebuild
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tvignaud@mandriva.com>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Wed Sep 19 2007 Guillaume Rousse <guillomovitch@mandriva.org> 0.10-10mdv2008.0
++ Revision: 90251
+- rebuild
+
+
+* Fri Jan 12 2007 Andreas Hasenack <andreas@mandriva.com> 0.10-9mdv2007.0
++ Revision: 108024
+- rebuild
+- using mkrel
+- Import regutils
+
+* Sun Dec 25 2005 Oden Eriksson <oeriksson@mandriva.com> 0.10-8mdk
+- fix wrong-script-interpreter
+
+* Sun Dec 25 2005 Oden Eriksson <oeriksson@mandriva.com> 0.10-7mdk
+- rebuild
+
+* Sat Oct 16 2004 Oden Eriksson <oeriksson@mandrakesoft.com> 0.10-6mdk
+- rebuilt
+- rename patch
+
