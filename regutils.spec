@@ -4,7 +4,7 @@ Version:	0.10
 Release:	%mkrel 12
 License:	GPL
 Group:		Networking/Other
-URL:		http://www.cs.mun.ca/~michael/regutils/
+URL:		https://www.cs.mun.ca/~michael/regutils/
 Source0:	%{name}-%{version}.tar.bz2
 Patch0:		regutils-0.10-Makefile.patch
 Requires:	findutils
