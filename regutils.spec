@@ -9,6 +9,7 @@ Source0:	%{name}-%{version}.tar.bz2
 Patch0:		regutils-0.10-Makefile.patch
 Requires:	findutils
 #Requires:	samba-common samba
+BuildRequires:	make
 BuildRequires:	ed
 BuildRequires:	perl
 Provides:	regedit
